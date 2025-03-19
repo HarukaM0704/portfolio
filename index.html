@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <!--レスポンシブデザイン用-->
+        <meta name="viewport" content="width=device-width">
+        <!--fontawesome-->
+        <link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <title>Haruka's Portfolio</title>
+    </head>
+    <body>
+        <script src="src/script.js"></script>
+        <!--ヘッダー-->
+        <header>
+            <!--トップへのリンク-->
+            <div class="header-left">
+                <a href="#top" class="header-menu">haruka's Portfolio</a>
+            </div>
+            <!--各コンテンツへのリンク-->
+            <div class="header-right">
+                <button class="hamburger-menu" id="js-hamburger-menu">
+                    <span class="hamburger-menu__bar"></span>
+                    <span class="hamburger-menu__bar"></span>
+                    <span class="hamburger-menu__bar"></span>
+                </button>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item"><a href="#profile" class="header-menu">profile</a></li>
+                        <li class="navigation__list-item"><a href="#work" class="header-menu">work</a></li>
+                        <li class="navigation__list-item"><a href="#contact" class="header-menu">contact</a></li>
+                    </ul>   
+                </nav>
+            </div>
+        </header>
+        <!--メインコンテンツ-->
+        <main>
+            <!--ようこそ-->
+            <div id="top">
+                <div class="top container">
+                    <!--各コンテンツへのリンク-->
+                    <ul>
+                        <li><a href="#profile" class="top-menu"><i class="fa-solid fa-user" style="color: #ffffff;"></i></i>profile</a></li>
+                        <li><a href="#work" class="top-menu"><i class="fa-solid fa-laptop-code" style="color: #ffffff;"></i>work</a></li>
+                        <li><a href="#contact" class="top-menu"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Profile-->
+            <div id="profile">
+                <div class="container">
+                    <h2>profile</h2>
+                    <div class="profile">
+                        <div class="profile-contents">
+                            <!--アイコン-->
+                            <div class="profile-icon">
+                                <img src="image/やかん.png" class="icon">
+                            </div>
+                            <!--自己紹介-->
+                            <div class="profile-text">
+                                <h3>松原 遥</h3>
+                                <p>愛知工業大学情報科学部卒。</p>
+                                <p>父の影響で幼いころからPCに触れる。</p>
+                                <p>現在はうつ病と向き合いながら就労移行支援に通所中。</p>
+                                <p>趣味はゲーム、美味しいものを食べること。</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <!--経歴-->
+                    <div class="skill-contents">
+                        <h3>personal history</h3>
+                        <ul class="skill">
+                            <li>2017年<p>新卒入社。SEとしてOJTに取り組む。</p></li>
+                            <li>2018年<p>自律神経失調症の診断。出社ができず、やむを得ず退職。</p></li>
+                            <li>2022年<p>ITエンジニアとして再就職。</p><p>この頃にうつ病が発覚。</p></li>
+                            <li>2024年<p>キャリアアップのため転職も、半年でうつ病が悪化。医師の勧めで退職。</p><p>就労移行支援に通所を始める。</p></li>
+                            <li>2025年現在<p>継続して就労移行支援に通所。求職活動中。</p></li>
+                        </ul>
+                    </div>
+                    <!--保有スキル紹介-->
+                    <div class="skill-contents">
+                        <h3>skill</h3>
+                        <ul class="skill">
+                            <li>応用情報技術者試験 合格(2017年6月)</li>
+                            <li>MOS Excel 365 Expert 合格(2024年11月)</li>
+                            <li>Java,COBOL,RPA(UiPath)実務経験</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--work-->
+            <div id="work">
+                <div class="work container">
+                    <h2>work</h2>
+                    <div class="contents-box">
+                        <div class="work-contents">
+                            <img src="image/top.png" height="200px">
+                            <h3>Portfolio site</h3>
+                            <p>HTML+CSS+JavaScript</p>
+                            <div class="work-text">
+                                <p>このホームページです。</p>
+                                <p>シンプルな構成にこだわりました。</p>
+                                <p>ヘッダーの制御にJSを使っています。</p>
+                            </div>
+                            <a href="" class="src">ソースコード：GitHub-Portfolio-</a>
+                        </div>
+                        <div class="work-contents">
+                            <img src="image/タイトル画面.png" height="200px">
+                            <a href="https://harukam0704.github.io/Kotatu-cat-Game/" target="_blank"><h3>こたつねこゲーム</h3></a>
+                            <p>Vite+TypeScript+Phaser</p>
+                            <div class="work-text">
+                                <p>某海戦ゲームをアレンジして作りました。</p>
+                                <p>子どもでも遊べるような作りを目指しました。</p>
+                                <p>意外と難しいのでぜひ挑戦してみてください。</p>
+                            </div>
+                            <a href="" class="src">ソースコード：GitHub-Kotatu-cat-Game-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="contact container">
+                    <h2>contact</h2>
+                    <div>
+                        <ul>
+                            <li><a href="mailto:sphilar.infelyor@gmail.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>sphilar.infelyor@gmail.com</a></li>
+                            <li><a href="https://github.com/HarukaM0704" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i>HarukaM0704</a></li>
+                            <!--
+                            <li><a href="" target="_blank"><img src="image/icon.png" width="20px" class="noteicon">Note</a></li>
+                            -->
+                        </ul>
+                    </div>
+                </div>    
+            </div>    
+        </main>
+    </body>
+</html>
