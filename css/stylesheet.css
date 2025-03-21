@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Arial'
 }
 
 html {
@@ -16,12 +17,13 @@ body {
 header {
     background-color: #5fbfc2;
     overflow: auto;
-    padding: 0px 30px;
+    padding:  0px 30px;
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     right:0;
+    height: 40px;
 }
 
 .header-left {
@@ -37,7 +39,7 @@ header {
 }
 
 .navigation__list-item {
-    display: inline;
+    display: inline-block;
 }
 
 .hamburger-menu {
@@ -45,12 +47,10 @@ header {
 }
 
 .header-menu {
-    height: 30px;
     padding: 10px;
     display: inline-block;
     color: white;
     text-decoration: none;
-    
 }
 
 .header-menu:hover {
