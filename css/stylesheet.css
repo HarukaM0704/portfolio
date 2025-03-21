@@ -23,7 +23,6 @@ header {
     top: 0;
     left: 0;
     right:0;
-    height: 40px;
 }
 
 .header-left {
@@ -253,6 +252,11 @@ header {
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
+    .header-left {
+        height:50px;
+        padding:5px 0px;
+    }
+
     #top {
         height: 50vh;
         width: 100%;
@@ -302,11 +306,10 @@ header {
 
     .work-text {
         text-align: center;
-        
     }
 
     .hamburger-menu {
-        display:inline;
+        display: inline;
         width: 50px;
         height: 50px;
         float: right;
