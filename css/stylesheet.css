@@ -142,7 +142,30 @@ header {
     padding-top: 20px;
 }
 
-.skill {
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-list h4 {
+    font-weight: normal;
+}
+
+.skills {
+    margin: 10px;
+    width:80%
+}
+
+.content {
+    margin: 5px 0px;
+    padding:10px;
+    border:1px dotted #242424;
+    border-radius: 5px;
+}
+
+
+.qualification {
     padding: 10px 20px;
 }
 
@@ -292,6 +315,10 @@ header {
 
     .skill-contents {
         width:90%;
+    }
+
+    .skills {
+        width:100%;
     }
     
     .contents-box {
