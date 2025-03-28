@@ -148,6 +148,10 @@ header {
     flex-wrap: wrap;
 }
 
+.skill {
+    padding: 10px;
+}
+
 .skill-list h4 {
     font-weight: normal;
 }
