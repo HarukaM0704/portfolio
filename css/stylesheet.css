@@ -158,7 +158,7 @@ header {
 
 .skills {
     margin: 10px;
-    width:80%
+    width:80%;
 }
 
 .content {
@@ -166,6 +166,7 @@ header {
     padding:10px;
     border:1px dotted #242424;
     border-radius: 5px;
+    background-color:whitesmoke;
 }
 
 
