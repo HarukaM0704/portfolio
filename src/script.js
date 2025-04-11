@@ -9,10 +9,29 @@ $(window).scroll(function () {           /* スクロールされた時 */
     }
   });
   
-  $(function () {
-    $('#js-hamburger-menu, .navigation__link').on('click', function () {
-      $('.navigation').slideToggle(500)
-      $('.hamburger-menu').toggleClass('hamburger-menu--open')
-    });
+$(function () {
+  $('#js-hamburger-menu, .navigation__link').on('click', function () {
+    $('.navigation').slideToggle(500)
+    $('.hamburger-menu').toggleClass('hamburger-menu--open')
   });
-  
+});
+
+//modal
+$(function(){
+  var modal_open  = $('.js-modal-open');
+  var modal_close = $('.js-modal-close');
+
+  modal_open.on('click', function(){
+    var target = $(this).data('target');
+    var modal  = document.getElementById(target);
+    $(modal).fadeIn();
+    $('html, body').css('overflow-y', 'hidden');
+    return false;
+  });
+
+  modal_close.on('click', function(){
+    $('.js-modal').fadeOut();
+    $('html, body').css('overflow-y', 'auto');
+    return false;
+  });
+});
