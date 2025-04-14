@@ -110,6 +110,11 @@ header {
     padding-top:30px;
 }
 
+/*マーカー*/
+#profile h3 {
+    background: linear-gradient(transparent 70%, #93C4FF 70%);
+}
+
 .profile-contents {
     display: flex;
     flex-direction: row;
@@ -150,6 +155,11 @@ header {
 
 .skill {
     padding: 10px;
+}
+
+/*マーカー風ライン*/
+.skills h4 {
+    background: linear-gradient(transparent 70%, yellow 70%);
 }
 
 .skill-list h4 {
@@ -245,27 +255,29 @@ header {
     height: 100vh;
     width: 100%;
     z-index: 100;
-  }
-  .modal-bg {
+    text-align: center;
+}
+
+.modal-bg {
     position: absolute;
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 101;
-  }
+}
   
-  /* Modal Content */
-  .modal-content {
+/* Modal Content */
+.modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     z-index: 102;
-  }
+}
 
   
-  .modal-inner {
+.modal-inner {
     position: relative;
     background: white;
     width: 100%;
@@ -274,16 +286,15 @@ header {
     padding: 30px;
     overflow-x: hidden;
     overflow-y: auto;
-  }
+}
   
-  /* Close Button */
-  .btn_close {
+/* Close Button */
+.btn_close {
     display: block;
     position: absolute;
     top: 0px;
     right: 0;
     background-color: white;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
     color: black;
@@ -292,27 +303,30 @@ header {
     text-decoration: none;
     line-height: 35px;
     z-index: 105;
-  }
+}
 
-
-  table {
+table {
     margin-top:10px;
     width: 100%;
     border:1px solid;
-  }
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-all;
+    text-align: left;
+}
 
-  td {
+td {
     border:1px solid;
     padding:5px;
-  }
+}
 
-  .left {
-    width:10%;
-  }
+.left {
+    width:20%;
+}
 
-  .right {
+.right {
     width:80%;
-  }
+}
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
